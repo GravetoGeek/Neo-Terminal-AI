@@ -1,4 +1,4 @@
-export class EnvironmentVariable {
+export default class EnvironmentVariable {
     constructor(
         public readonly name: string,    // Nome da variável (e.g., "PATH")
         public value: string,   // Valor da variável
@@ -9,7 +9,7 @@ export class EnvironmentVariable {
         if(!this.isProtected) {
             this.value=newValue;
         } else {
-            throw new Error('Cannot modify a protected variable');
+            throw new Error('Não é possível modificar uma variável protegida');
         }
     }
 }

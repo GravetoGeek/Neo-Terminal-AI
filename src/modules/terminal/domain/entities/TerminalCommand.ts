@@ -1,4 +1,4 @@
-export class TerminalCommand {
+export default class TerminalCommand {
     constructor(
         public readonly id: string,
         public readonly name: string,

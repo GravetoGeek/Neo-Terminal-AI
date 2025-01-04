@@ -1,4 +1,4 @@
-export class CommandResult {
+export default class CommandResult {
     constructor(
         public readonly commandId: string,  // Referência ao comando original
         public readonly output: string,     // Saída gerada pelo comando

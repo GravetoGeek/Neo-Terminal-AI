@@ -1,4 +1,4 @@
-export class TerminalConfiguration {
+export default class TerminalConfiguration {
     constructor(
         public readonly id: string,               // Identificador único da configuração
         public readonly userId: string|null,    // Usuário associado (null para configuração padrão)

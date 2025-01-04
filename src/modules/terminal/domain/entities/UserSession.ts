@@ -1,4 +1,4 @@
-import {TerminalCommand} from './terminal-command';
+import TerminalCommand from '@modules/terminal/domain/entities/TerminalCommand';
 
 export class UserSession {
     constructor(

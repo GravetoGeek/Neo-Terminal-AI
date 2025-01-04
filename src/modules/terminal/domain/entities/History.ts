@@ -1,6 +1,6 @@
-import {CommandResult} from './command-result'; // Adjust the path as necessary
+import CommandResult from '@modules/terminal/domain/entities/CommandResult'; // Adjust the path as necessary
 
-export class History {
+export default class History {
     constructor(
         public readonly historyId: string,       // ID único do histórico
         public readonly userId: string,          // ID do usuário (ou global se null)
