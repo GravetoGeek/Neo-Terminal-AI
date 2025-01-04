@@ -1,9 +1,10 @@
+import {TerminalModule} from '@modules/terminal/terminal.module';
 import {Module} from '@nestjs/common';
-import {AppController} from './app.controller';
-import {AppService} from './app.service';
+import {AppController} from '@src/app.controller';
+import {AppService} from '@src/app.service';
 
 @Module({
-    imports: [],
+    imports: [TerminalModule],
     controllers: [AppController],
     providers: [AppService],
 })
