@@ -2,8 +2,8 @@ export class TerminalCommand {
     constructor(
         public readonly id: string,
         public readonly name: string,
-        public readonly args: string[],
         public readonly timestamp: Date,
+        public readonly args: string[]=[],
     ) {}
 
     execute(): string {
