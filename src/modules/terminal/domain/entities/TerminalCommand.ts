@@ -6,8 +6,14 @@ export default class TerminalCommand {
         public readonly args: string[]=[],
     ) {}
 
+    /**
+     * Executa o comando com os argumentos fornecidos.
+     * @returns Mensagem de execução do comando.
+     */
+    // TODO: Implementar execução de comandos, TerminalCommand.prototype.execute
     execute(): string {
         // Regras de negócio para execução de comandos
-        return `Executando ${this.name} com os seguintes parâmetros ${this.args.join(' ')}`;
+
+        return `Executando '${this.name}' com os seguintes parâmetros: ${this.args.join(' ')}`;
     }
 }
