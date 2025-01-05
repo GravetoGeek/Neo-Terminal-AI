@@ -5,6 +5,10 @@ export default class EnvironmentVariable {
         public readonly isProtected: boolean, // Indica se a variável é protegida contra alterações
     ) {}
 
+    /**
+     * Atualiza o valor da variável de ambiente.
+     * @param newValue Novo valor da variável
+     */
     updateValue(newValue: string): void {
         if(!this.isProtected) {
             this.value=newValue;
